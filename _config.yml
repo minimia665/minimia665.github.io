@@ -1,3 +1,10 @@
 title: Mia 的部落格
 description: 我的個人部落格
 theme: minima
+
+header_pages:
+  - about-me.md
+  - study.md
+  - photo.md
+  - book.md
+  - records.md
