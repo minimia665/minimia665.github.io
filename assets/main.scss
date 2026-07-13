@@ -1,0 +1,51 @@
+---
+   ---
+   @charset "utf-8";
+
+   $background-color: #FDF8F0 !default;
+   $text-color: #8A8A8A !default;
+   $brand-color: #A8D5BA !default;
+
+   @import "minima";
+
+   body {
+     font-weight: 300;
+   }
+
+   .home-hero {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 80px 20px;
+   }
+
+   .home-avatar-placeholder {
+     width: 160px;
+     height: 160px;
+     border-radius: 50%;
+     border: 2px dashed $brand-color;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: $brand-color;
+     margin-bottom: 60px;
+     font-size: 14px;
+   }
+
+   .home-nav {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 32px;
+   }
+
+   .home-nav a {
+     color: $text-color;
+     font-size: 20px;
+     text-decoration: none;
+     letter-spacing: 1px;
+   }
+
+   .home-nav a:hover {
+     color: $brand-color;
+   }
