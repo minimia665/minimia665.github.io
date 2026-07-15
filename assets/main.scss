@@ -28,22 +28,45 @@ body {
   margin-bottom: 30px;
 }
 
-
 .home-nav {
   display: flex;
-  gap: 35px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+  padding: 40px 20px;
 }
 
-
-.home-nav a {
-  color: #777;
+.icon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   text-decoration: none;
+  width: 96px;
+  color: #777;
   letter-spacing: 2px;
+  transition: transform 0.25s ease;
 }
 
-
-.home-nav a:hover {
+.icon-card:hover {
+  transform: scale(1.04);
   color: #8FB9A8;
+}
+
+.icon-placeholder {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #E8EFE9;
+  transition: background 0.25s ease;
+}
+
+.icon-card:hover .icon-placeholder {
+  background: #8FB9A8;
+}
+
+.icon-label {
+  font-size: 13px;
 }
 
 .site-header {
