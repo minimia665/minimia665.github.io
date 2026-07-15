@@ -5,8 +5,8 @@
 
 
 body {
-  background: #FDFBF7;
-  color: #777;
+  background: #FFF7F5;
+  color: #8A6B6E;
   font-family: "Noto Sans TC", sans-serif;
 }
 
@@ -20,11 +20,11 @@ body {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  background: #E8EFE9;
+  background: #FADCE0;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #999;
+  color: #B5949A;
   margin-bottom: 30px;
 }
 
@@ -43,26 +43,26 @@ body {
   gap: 10px;
   text-decoration: none;
   width: 96px;
-  color: #777;
+  color: #8A6B6E;
   letter-spacing: 2px;
   transition: transform 0.25s ease;
 }
 
 .icon-card:hover {
   transform: scale(1.04);
-  color: #8FB9A8;
+  color: #F2A6B4;
 }
 
 .icon-placeholder {
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  background: #E8EFE9;
+  background: #FADCE0;
   transition: background 0.25s ease;
 }
 
 .icon-card:hover .icon-placeholder {
-  background: #8FB9A8;
+  background: #F2A6B4;
 }
 
 .icon-label {
