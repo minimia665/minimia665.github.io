@@ -12,11 +12,12 @@ body {
 
 
 .home-hero {
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: flex-start;
+  padding-top: 120px;
 }
 
 
