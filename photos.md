@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Photos
-permalink: /photo/
+permalink: /photos/
 ---
 
 這裡之後會放照片。
