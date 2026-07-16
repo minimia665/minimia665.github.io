@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 紀錄
+title: Records
 permalink: /records/
 ---
 
