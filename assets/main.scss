@@ -116,3 +116,16 @@ h1 {
 body {
   line-height: 1.6;
 }
+
+.icon-placeholder {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #F5D6DA;
+  transition: all 0.25s ease;
+}
+
+.icon-card:hover .icon-placeholder {
+  background: #F2A6B4;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
