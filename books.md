@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Books
-permalink: /book/
+permalink: /books/
 ---
 
 這裡之後會放讀書心得。
