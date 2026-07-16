@@ -8,6 +8,6 @@ sass:
 header_pages:
   - about-me.md
   - study.md
-  - photo.md
-  - book.md
+  - photos.md
+  - books.md
   - records.md
