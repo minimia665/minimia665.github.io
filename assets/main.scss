@@ -71,7 +71,27 @@ body {
 }
 
 .site-header {
-  display: none;
+  display: block;
+  background: #FDFBF7;
+  border-bottom: 1px solid #F0EAE5;
+  padding: 14px 0;
+}
+
+.site-title {
+  font-size: 16px;
+  color: #9A7C80;
+  letter-spacing: 1px;
+}
+
+.site-nav .page-link {
+  color: #9A7C80;
+  margin-left: 22px;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.site-nav .page-link:hover {
+  color: #F2A6B4;
 }
 
 .post-list {
