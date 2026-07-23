@@ -78,13 +78,11 @@ body {
   background: #FDFBF7;
   border-bottom: 1px solid #F0EAE5;
   padding: 14px 0;
-}
-
-.site-header .wrapper {
   display: flex;
-  justify-content: space-between; /* 左右拉開 */
+  justify-content: space-between;
   align-items: center;
 }
+
 
 .site-title {
   font-size: 16px;
