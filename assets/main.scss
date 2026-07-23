@@ -143,15 +143,17 @@ body {
   margin-bottom: 30px;
 }
 
-.wrapper {
-  max-width: 1200px;
+.site-nav .page-link {
+  margin-left: 22px;
+  font-size: 14px;
+}
+
+.site-header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .site-nav {
   margin-left: auto;
-}
-
-.site-nav .page-link {
-  margin-left: 22px;
-  font-size: 14px;
 }
