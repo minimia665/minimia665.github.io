@@ -131,3 +131,11 @@ body {
   background: #F2A6B4;
   box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
+
+.home-profile {
+  display: flex;
+  align-items: center;   /* 垂直置中 */
+  justify-content: center;
+  gap: 20px;             /* 頭像和文字的距離 */
+  margin-bottom: 30px;
+}
