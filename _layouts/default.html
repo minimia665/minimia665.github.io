@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <title>{{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="wrapper">
+
+    <a class="site-title" href="{{ '/' | relative_url }}">
+      Home
+    </a>
+
+    <nav class="site-nav">
+      <a class="page-link" href="/about-me/">About me</a>
+      <a class="page-link" href="/study/">Study</a>
+      <a class="page-link" href="/photo/">Photos</a>
+      <a class="page-link" href="/book/">Books</a>
+      <a class="page-link" href="/records/">Records</a>
+    </nav>
+
+  </div>
+</header>
+
+<main class="page-content">
+  <div class="wrapper">
+    {{ content }}
+  </div>
+</main>
+
+</body>
+</html>
