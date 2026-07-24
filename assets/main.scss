@@ -1,22 +1,31 @@
 ---
 ---
-
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
 @import "minima";
 
-
+/* ---- 全域 Global ---- */
 body {
   background: #FDFBF7;
   color: #8A6B6E;
   font-family: "Quicksand", sans-serif;
+  line-height: 1.6;
+}
+h1 {
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
-
+/* ---- 首頁區塊 Home layout ---- */
 .home-hero {
   padding-top: 40px;
 }
-
-
+.home-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
 .home-avatar {
   width: 160px;
   height: 160px;
@@ -24,13 +33,13 @@ body {
   overflow: hidden;
   margin-bottom: 30px;
 }
-
 .home-avatar img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+/* ---- 導覽圖示 Icon nav ---- */
 .home-nav {
   display: flex;
   flex-wrap: wrap;
@@ -39,7 +48,6 @@ body {
   margin-top: 20px;
   padding: 40px 20px;
 }
-
 .icon-card {
   display: flex;
   flex-direction: column;
@@ -51,74 +59,10 @@ body {
   letter-spacing: 2px;
   transition: transform 0.25s ease;
 }
-
 .icon-card:hover {
   transform: translateY(-6px);
   color: #F2A6B4;
 }
-
-.icon-placeholder {
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  background: #FADCE0;
-  transition: background 0.25s ease;
-}
-
-.icon-card:hover .icon-placeholder {
-  background: #F2A6B4;
-}
-
-.icon-label {
-  font-size: 13px;
-}
-
-.site-header {
-  background: #FDFBF7;
-  border-bottom: 1px solid #F0EAE5;
-  padding: 14px 0;
-}
-
-.site-title {
-  font-size: 16px;
-  color: #8A6B6E;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.site-nav .page-link {
-  color: #9A7C80;
-  margin-left: 22px;
-  font-size: 14px;
-  transition: color 0.2s;
-}
-
-.site-nav .page-link:hover {
-  color: #F2A6B4;
-}
-
-.post-list {
-  display: none;
-}
-
-.site-footer {
-  display: none;
-}
-
-h1 {
-  font-weight: 500;
-  letter-spacing: 1px;
-}
-
-.icon-label {
-  font-size: 12px;
-  letter-spacing: 2px;
-}
-
-body {
-  line-height: 1.6;
-}
-
 .icon-placeholder {
   width: 72px;
   height: 72px;
@@ -126,22 +70,46 @@ body {
   background: #F5D6DA;
   transition: all 0.25s ease;
 }
-
 .icon-card:hover .icon-placeholder {
   background: #F2A6B4;
   box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
-
-.home-profile {
-  display: flex;
-  align-items: center;   /* 垂直置中 */
-  justify-content: center;
-  gap: 20px;             /* 頭像和文字的距離 */
-  margin-bottom: 30px;
+.icon-label {
+  font-size: 12px;
+  letter-spacing: 2px;
 }
 
+/* ---- 頂部導覽列 Site header ---- */
+.site-header {
+  background: #FDFBF7;
+  border-bottom: 1px solid #F0EAE5;
+  padding: 14px 0;
+}
 .site-header .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.site-title {
+  font-size: 16px;
+  color: #8A6B6E;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.site-nav .page-link {
+  color: #9A7C80;
+  margin-left: 22px;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+.site-nav .page-link:hover {
+  color: #F2A6B4;
+}
+
+/* ---- 隱藏區塊 Hidden elements ---- */
+.post-list {
+  display: none;
+}
+.site-footer {
+  display: none;
 }
