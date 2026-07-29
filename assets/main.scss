@@ -20,12 +20,13 @@ h1 {
 .home-hero {
   padding-top: 40px;
 }
-.home-profile {
+.home-nav {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 20px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  padding: 40px 20px;
 }
 .home-avatar {
   width: 160px;
