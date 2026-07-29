@@ -20,14 +20,6 @@ h1 {
 .home-hero {
   padding-top: 40px;
 }
-.home-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 20px;
-  margin-top: 20px;
-  padding: 40px 20px;
-}
 .home-avatar {
   width: 160px;
   height: 160px;
@@ -45,7 +37,7 @@ h1 {
 .home-nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content:flex-end;
   gap: 20px;
   margin-top: 20px;
   padding: 40px 20px;
