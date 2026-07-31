@@ -52,19 +52,40 @@ h1 {
   transform: translateY(-6px);
   color: #A8D5BA;
 }
-.icon-placeholder {
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  background: #F5D6DA;
-  transition: all 0.25s ease;
+}.home-nav .icon-card:nth-child(1) .icon-placeholder {
+  background: #F6C6D0;
 }
-.icon-card:hover .icon-placeholder {
-  background: #A8D5BA;
+.home-nav .icon-card:nth-child(2) .icon-placeholder {
+  background: #F9E2A8;
+}
+.home-nav .icon-card:nth-child(3) .icon-placeholder {
+  background: #B8DCEA;
+}
+.home-nav .icon-card:nth-child(4) .icon-placeholder {
+  background: #D9D2F0;
+}
+.home-nav .icon-card:nth-child(5) .icon-placeholder {
+  background: #C3E8CE;
+}
+.home-nav .icon-card:nth-child(1):hover .icon-placeholder {
+  background: #FBE2E8;
   box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
-.icon-card:hover .icon-label {
-  color: #A8D5BA;
+.home-nav .icon-card:nth-child(2):hover .icon-placeholder {
+  background: #FCEFCB;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+.home-nav .icon-card:nth-child(3):hover .icon-placeholder {
+  background: #D9EEF5;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+.home-nav .icon-card:nth-child(4):hover .icon-placeholder {
+  background: #ECE7F7;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+.home-nav .icon-card:nth-child(5):hover .icon-placeholder {
+  background: #DEF2E5;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
 .icon-label {
   font-size: 12px;
