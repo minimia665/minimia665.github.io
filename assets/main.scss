@@ -96,12 +96,14 @@ h1 {
 }
 .site-nav .page-link {
   color: #9A7C80;
-  margin-left: 22px;
-  font-size: 16px;
-  transition: color 0.2s;
+  margin-left: 12px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: all 0.25s ease;
 }
 .site-nav .page-link:hover {
-  color: #F2A6B4;
+  background: #FADCE0;
+  color: #8A6B6E;
 }
 
 /* ---- 隱藏區塊 Hidden elements ---- */
