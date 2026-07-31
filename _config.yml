@@ -6,9 +6,3 @@ sass:
   style: compressed
   
 header_pages:
-  - index.md
-  - about-me.md
-  - study.md
-  - photo.md
-  - book.md
-  - records.md
