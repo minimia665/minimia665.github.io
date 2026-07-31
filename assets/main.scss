@@ -82,28 +82,19 @@ h1 {
   width: 100%;
 }
 .site-header .wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 100%;
-  padding: 0 50px;
+  justify-content: center;
 }
 .site-title {
-  font-size: 16px;
-  color: #9A7C80;
-  font-weight: 600;
-  letter-spacing: 1px;
+  display: none;
 }
 .site-nav .page-link {
-  color: #9A7C80;
-  margin-left: 12px;
-  padding: 6px 14px;
-  border-radius: 20px;
-  transition: all 0.25s ease;
+  margin: 0 10px;
+  position: relative;
 }
-.site-nav .page-link:hover {
-  background: #FADCE0;
-  color: #8A6B6E;
+.site-nav .page-link:not(:last-child)::after {
+  content: "·";
+  margin-left: 10px;
+  color: #D8C7C9;
 }
 
 /* ---- 隱藏區塊 Hidden elements ---- */
