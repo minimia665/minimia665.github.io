@@ -69,6 +69,9 @@ h1 {
   background: #A8D5BA;
   box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
+.icon-card:hover .icon-label {
+  color: #A8D5BA;
+}
 .icon-label {
   font-size: 12px;
   letter-spacing: 2px;
