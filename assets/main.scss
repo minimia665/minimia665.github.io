@@ -160,9 +160,10 @@ h1 {
   width: 100%;
 }
 .site-header .wrapper {
-  /* 橫桿裡面內容（Home 文字）怎麼排列
-     How the content inside the bar (the "Home" text) is arranged */
-  justify-content: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
 }
 .site-title {
   /* 「Home」這個字本身的樣式
