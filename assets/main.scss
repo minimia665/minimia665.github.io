@@ -51,6 +51,12 @@ h1 {
 .icon-card:hover {
   transform: translateY(-6px);
 }
+.icon-placeholder {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  transition: all 0.25s ease;
+}
 .home-nav .icon-card:nth-child(1) .icon-placeholder {
   background: #F6C6D0;
 }
