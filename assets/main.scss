@@ -1,6 +1,6 @@
 ---
 ---
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Cormorant+SC:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&family=Cormorant+SC:wght@400;600&display=swap');
 @import "minima";
 
 /* ---- 全域 Global ---- */
@@ -12,15 +12,15 @@ body {
   width: 100%;
 }
 h1 {
-  font-family: "Sacramento", cursive;
-  font-weight: 400;
-  font-size: 56px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
   letter-spacing: 1px;
 }
 .subtitle {
-  font-family: "Cormorant SC", serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: 1px;
 }
 /* ---- 首頁區塊 Home layout ---- */
