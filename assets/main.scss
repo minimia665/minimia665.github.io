@@ -160,8 +160,11 @@ h1 {
   width: 100%;
 }
 .site-header .wrapper {
-justify-content: center;
-}  
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+}
 .site-title {
   /* 「Home」這個字本身的樣式
      Styling for the "Home" text itself */
