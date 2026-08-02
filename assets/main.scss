@@ -156,7 +156,7 @@ h1 {
 .site-header {
   background: #FBF8F5;               /* 很淡的米白，跟頁面背景幾乎融合 / Very pale off-white, nearly blends with the page */
   border-bottom: 1px solid #F0EAE5;  /* 底部一條細線，做出分隔感 / A thin bottom line to create separation */
-  padding: 8px 0;                    /* 上下留白，決定橫桿的高矮 / Top/bottom padding — controls the bar's height */
+  padding: 20px 0 8px;                    /* 上下留白，決定橫桿的高矮 / Top/bottom padding — controls the bar's height */
   width: 100%;
 }
 .site-header .wrapper {
@@ -168,7 +168,7 @@ h1 {
   /* 「Home」這個字本身的樣式
      Styling for the "Home" text itself */
   display: block;
-  color: #8A6B6E;
+  color: #8B5E3C;
   text-decoration: none;
   font-weight: 600;
   font-size: 18px;
