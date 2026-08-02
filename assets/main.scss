@@ -169,7 +169,8 @@ h1 {
 .site-title {
   /* 「Home」這個字本身的樣式
      Styling for the "Home" text itself */
-  display: block;
+  display: flex;
+  align-items: center;
   color: #8B5E3C;
   text-decoration: none;
   font-weight: 600;
