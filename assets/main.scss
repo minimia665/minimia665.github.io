@@ -1,115 +1,172 @@
 ---
 ---
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&family=Cormorant+SC:wght@400;600&display=swap');
+/* ============================================
+   這是網站的「造型師」，負責決定顏色、字體、排版
+   This file is the site's "stylist" — it decides
+   colors, fonts, and layout for the whole website.
+   ============================================ */
+
+
+/* ---- 第一步：跟網路借字體 ----
+   Step 1: Borrow fonts from the internet (Google Fonts)
+   就像去圖書館借書一樣，網站開啟時會先去下載這些字體檔案
+   Like borrowing books from a library — the site downloads
+   these font files whenever someone visits the page. */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;700&family=Cormorant+SC:wght@400;600&display=swap');
+
+/* 這行是跟 Jekyll 要一套現成的網站骨架，叫做 "minima"
+   This line asks Jekyll for a ready-made site skeleton called "minima" */
 @import "minima";
 
-/* ---- 全域 Global ---- */
+
+/* ============================================
+   全域設定：整個網站共用的基本規則
+   Global settings: base rules shared by the whole site
+   ============================================ */
+
 body {
+  /* 網頁背景色，米白色，像牛奶的顏色
+     Page background color — a warm off-white, like milk */
   background: #FDFBF7;
+
+  /* 文字預設顏色，淡淡的咖啡粉色
+     Default text color — a soft pink-brown */
   color: #8A6B6E;
-  font-family: "Cormorant SC", serif;
+
+  /* 中文字要用的字體：Noto Sans TC（清楚好讀的黑體）
+     Font for Chinese text: Noto Sans TC (a clean, readable sans-serif) */
+  font-family: "Noto Sans TC", sans-serif;
+
+  /* 行距，讓一行行文字之間不要擠在一起
+     Line spacing, so lines of text don't feel cramped */
   line-height: 1.6;
+
+  /* 寬度佔滿整個畫面
+     Width fills the entire screen */
   width: 100%;
 }
+
 h1 {
+  /* 大標題（例如「Mia」）用的字體：Josefin Sans（現代簡潔）
+     Font for big headings (like "Mia"): Josefin Sans (modern, clean) */
   font-family: "Josefin Sans", sans-serif;
-  font-weight: 600;
-  font-size: 40px;
-  letter-spacing: 1px;
+  font-weight: 600;     /* 字重：偏粗一點，比較有份量 / Bolder weight for presence */
+  font-size: 40px;      /* 字級大小 / Font size */
+  letter-spacing: 1px;  /* 字跟字之間留一點空隙 / Slight spacing between letters */
 }
+
 .subtitle {
+  /* 副標題（例如首頁那句自我介紹）也用 Josefin Sans，但比較小、比較細
+     Subtitle (like the homepage tagline) also uses Josefin Sans,
+     but smaller and thinner */
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 1px;
 }
-/* ---- 首頁區塊 Home layout ---- */
+
+
+/* ============================================
+   首頁專用區塊：只有首頁會用到這些
+   Homepage-only section: these only apply to the homepage
+   ============================================ */
+
 .home-hero {
+  /* 首頁最上面留一點空間，不要貼著導覽列
+     Adds space at the top of the homepage, below the nav bar */
   padding-top: 40px;
 }
 
-/* ---- 導覽圖示 Icon nav ---- */
+
+/* ---- 五個圖示卡片（About me / Study / Photos / Books / Records）----
+   The five icon cards (About me / Study / Photos / Books / Records) */
+
 .home-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:center;
-  gap: 20px;
+  display: flex;              /* 讓裡面的卡片排成一排 / Lines the cards up in a row */
+  flex-wrap: wrap;            /* 畫面太窄時自動換行 / Wraps to a new line if the screen is too narrow */
+  justify-content: center;    /* 卡片整體置中 / Centers the whole row */
+  gap: 20px;                  /* 卡片之間的間距 / Space between each card */
   margin-top: 20px;
   padding: 40px 20px;
 }
+
 .icon-card {
+  /* 每一張卡片（圓形 + 文字）的排列方式
+     How each card (circle + label) is arranged */
   display: flex;
-  flex-direction: column;
+  flex-direction: column;     /* 圓形在上，文字在下 / Circle on top, text below */
   align-items: center;
   gap: 10px;
-  text-decoration: none;
-  width: 96px;
+  text-decoration: none;      /* 拿掉連結底線 / Removes the link underline */
+  width: 96px;                /* 每張卡片固定寬度，確保五個一樣大 / Fixed width so all 5 cards match in size */
   color: #8A6B6E;
   letter-spacing: 2px;
-  transition: transform 0.25s ease;
+  transition: transform 0.25s ease;  /* 滑鼠移過去時，動畫要慢慢來，不要瞬間跳 / Smooth animation on hover, not instant */
 }
+
 .icon-card:hover {
+  /* 滑鼠移到卡片上時：整張卡片往上浮一點
+     When hovering a card: the whole card lifts up slightly */
   transform: translateY(-6px);
 }
+
 .icon-placeholder {
+  /* 圓形色塊的基本形狀（大小、圓角、動畫速度）
+     The circle's basic shape (size, roundness, animation speed) */
   width: 72px;
   height: 72px;
-  border-radius: 50%;
+  border-radius: 50%;   /* 50% 圓角 = 正圓形 / 50% corner-rounding = a perfect circle */
   transition: all 0.25s ease;
 }
-.home-nav .icon-card:nth-child(1) .icon-placeholder {
-  background: #F6C6D0;
-}
-.home-nav .icon-card:nth-child(2) .icon-placeholder {
-  background: #F9E2A8;
-}
-.home-nav .icon-card:nth-child(3) .icon-placeholder {
-  background: #B8DCEA;
-}
-.home-nav .icon-card:nth-child(4) .icon-placeholder {
-  background: #D9D2F0;
-}
-.home-nav .icon-card:nth-child(5) .icon-placeholder {
-  background: #C3E8CE;
-}
-.home-nav .icon-card:nth-child(1):hover .icon-placeholder {
-  background: #FBE2E8;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-}
-.home-nav .icon-card:nth-child(2):hover .icon-placeholder {
-  background: #FCEFCB;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-}
-.home-nav .icon-card:nth-child(3):hover .icon-placeholder {
-  background: #D9EEF5;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-}
-.home-nav .icon-card:nth-child(4):hover .icon-placeholder {
-  background: #ECE7F7;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-}
-.home-nav .icon-card:nth-child(5):hover .icon-placeholder {
-  background: #DEF2E5;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-}
+
+/* 這五組規則，分別指定第 1～5 個圖示卡片各自的顏色
+   These five rules assign a different color to each of the 5 icon cards
+   （nth-child(1) 代表「第一個」，以此類推 / nth-child(1) means "the 1st one", and so on） */
+.home-nav .icon-card:nth-child(1) .icon-placeholder { background: #F6C6D0; } /* 粉 About me */
+.home-nav .icon-card:nth-child(2) .icon-placeholder { background: #F9E2A8; } /* 黃 Study */
+.home-nav .icon-card:nth-child(3) .icon-placeholder { background: #B8DCEA; } /* 藍 Photos */
+.home-nav .icon-card:nth-child(4) .icon-placeholder { background: #D9D2F0; } /* 藍紫 Books */
+.home-nav .icon-card:nth-child(5) .icon-placeholder { background: #C3E8CE; } /* 綠 Records */
+
+/* 滑鼠移到每個圖示上時，圓形顏色會變成「自己顏色的更深版本」
+   When hovering each icon, the circle darkens to a deeper version of its own color
+   （不是全部統一變成同一色，是各自變深，感覺更有重量、更清楚）
+   (Not all switching to one shared color — each one just gets darker,
+   giving a stronger, more noticeable feel) */
+.home-nav .icon-card:nth-child(1):hover .icon-placeholder { background: #E8899C; box-shadow: 0 6px 16px rgba(0,0,0,0.08); }
+.home-nav .icon-card:nth-child(2):hover .icon-placeholder { background: #F0C766; box-shadow: 0 6px 16px rgba(0,0,0,0.08); }
+.home-nav .icon-card:nth-child(3):hover .icon-placeholder { background: #8CC4DC; box-shadow: 0 6px 16px rgba(0,0,0,0.08); }
+.home-nav .icon-card:nth-child(4):hover .icon-placeholder { background: #B8ABE0; box-shadow: 0 6px 16px rgba(0,0,0,0.08); }
+.home-nav .icon-card:nth-child(5):hover .icon-placeholder { background: #93D2A8; box-shadow: 0 6px 16px rgba(0,0,0,0.08); }
+
 .icon-label {
+  /* 圖示下方的文字（About me、Study...）的樣式
+     Styling for the text under each icon (About me, Study...) */
   font-size: 12px;
   letter-spacing: 2px;
   color: #8A6B6E;
-  font-family: "Cormorant SC", serif;
+  font-family: "Cormorant SC", serif;  /* 這裡單獨用 Cormorant SC，跟內文不同 / Uses Cormorant SC specifically, different from body text */
 }
 
-/* ---- 頂部導覽列 Site header ---- */
+
+/* ============================================
+   頂部導覽列：畫面最上方那條含「Home」的橫桿
+   Top navigation bar: the strip at the very top with "Home"
+   ============================================ */
 .site-header {
-  background: #FBF8F5;
-  border-bottom: 1px solid #F0EAE5;
-  padding: 8px 0;
+  background: #FBF8F5;               /* 很淡的米白，跟頁面背景幾乎融合 / Very pale off-white, nearly blends with the page */
+  border-bottom: 1px solid #F0EAE5;  /* 底部一條細線，做出分隔感 / A thin bottom line to create separation */
+  padding: 8px 0;                    /* 上下留白，決定橫桿的高矮 / Top/bottom padding — controls the bar's height */
   width: 100%;
 }
 .site-header .wrapper {
+  /* 橫桿裡面內容（Home 文字）怎麼排列
+     How the content inside the bar (the "Home" text) is arranged */
   justify-content: center;
 }
 .site-title {
+  /* 「Home」這個字本身的樣式
+     Styling for the "Home" text itself */
   display: block;
   color: #8A6B6E;
   text-decoration: none;
@@ -119,10 +176,18 @@ h1 {
   font-family: "Cormorant SC", serif;
 }
 
-/* ---- 隱藏區塊 Hidden elements ---- */
+
+/* ============================================
+   隱藏區塊：把不想顯示的東西藏起來
+   Hidden section: hiding elements we don't want shown
+   ============================================ */
 .post-list {
+  /* 文章列表，暫時不顯示
+     Post list, hidden for now */
   display: none;
 }
 .site-footer {
+  /* 網站最下方的頁尾，暫時不顯示
+     Site footer, hidden for now */
   display: none;
 }
